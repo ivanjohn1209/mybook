@@ -1,0 +1,27 @@
+.header {
+  min-height: 50px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  display: block !important;
+}
+.navbar-principal {
+  background-color: #39bbdb;
+  border-color: #39bbdb;
+  box-shadow: 0 2px 2px -2p rgba(0, 0, 0, .52);
+}
+.navbar-fixed-top {
+  top: 0;
+  border-width: 0 0 1px;
+  position: fixed !important;
+  display: block !important;
+  right: 0px;
+  left: 0px;
+  z-index: 1030;
+}
+.navbar-header .logo{
+  font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+  font-size: 20px !important;
+  font-weight: 700;
+  color:#fff;
+  text-align: left;
+}
