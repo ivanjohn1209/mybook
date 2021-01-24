@@ -1,4 +1,4 @@
 {
-    "MONGOURI": "mongodb+srv://admin1209:5Tb3jLrgEZcgOjIY@cluster0.rwc5n.mongodb.net/<dbname>?retryWrites=true&w=majority",
+    "MONGOURI": "mongodb+srv://admin1209:5Tb3jLrgEZcgOjIY@cluster0.rwc5n.mongodb.net/mbook?retryWrites=true&w=majority",
     "jwtSecret": "mb_JwtSecret"
 }

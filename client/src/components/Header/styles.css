@@ -1,8 +1,8 @@
 .header {
-  min-height: 50px;
   margin-bottom: 20px;
   border: 1px solid transparent;
   display: block !important;
+  padding: 15px 0px;
 }
 .navbar-principal {
   background-color: #39bbdb;
@@ -18,7 +18,7 @@
   left: 0px;
   z-index: 1030;
 }
-.navbar-header .logo{
+.container .logo{
   font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
   font-size: 20px !important;
   font-weight: 700;

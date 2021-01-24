@@ -16,7 +16,6 @@ router.post('/', (req, res) => {
     if (!email || !password) {
         return res.status(400).json({ msg: 'Please enter all fields' });
     }
-
     // Check for existing user
     User.findOne({ email })
         .then(user => {

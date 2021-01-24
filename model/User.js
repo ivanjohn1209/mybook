@@ -5,7 +5,7 @@ const UserSchema = new Schema({
         type: String,
         required: true
     },
-    email: {
+    email_number: {
         type: String,
         required: true,
         unique: true
@@ -13,6 +13,14 @@ const UserSchema = new Schema({
     password: {
         type: String,
         required: true
+    },
+    birth_date: {
+        type: Date,
+        required: true,
+    },
+    gender: {
+        type: String,
+        required: true,
     },
     register_date: {
         type: Date,

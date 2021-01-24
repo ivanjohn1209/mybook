@@ -8,9 +8,9 @@ const Header = (props) => {
     return (
         <nav className="header navbar-fixed-top navbar-principal">
             <div className="container">
-                <div className="navbar-header">
-                    <h2 className="logo">Mybook</h2>
-                </div>
+                <div className="navbar-header logo">
+                    Mybook
+            </div>
                 <div id="navbar" className="collapse navbar-collapse">
                     <div className="col-md-5 col-sm-3">
                         <form className="navbar-form">
@@ -49,7 +49,7 @@ const Header = (props) => {
                     </ul>
                 </div>
             </div>
-        </nav>
+        </nav >
 
     );
 }

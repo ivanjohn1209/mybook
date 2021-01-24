@@ -1,6 +1,6 @@
-import React from 'react'
-import { useHistory } from "react-router";
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom';
+import { GlobalContext } from '../../../context/GlobalState';
 import { GetYear, GetDay } from '../../../function';
 
 import "./styles.css"
@@ -8,8 +8,11 @@ import "./styles.css"
 const Register = () => {
     const year = GetYear().reverse();
     const day = GetDay();
-    const history = useHistory();
-
+    const { addUser } = useContext(GlobalContext)
+    const createUser = (e) => {
+        e.preventDefault()
+        addUser()
+    }
     return (
         <div className="login-page">
             <div className="form">
@@ -17,17 +20,17 @@ const Register = () => {
                 <form className="login-form">
                     <div className="form-group row">
                         <div className="col-md-6">
-                            <input type="email" className="form-control" id="email" placeholder="First name" />
+                            <input type="text" className="form-control" placeholder="First name" />
                         </div>
                         <div className="col-md-6">
-                            <input type="email" className="form-control" id="email" placeholder="Last name" />
+                            <input type="text" className="form-control" placeholder="Last name" />
                         </div>
                     </div>
                     <div className="form-group">
-                        <input type="password" className="form-control" id="pwd" placeholder="Mobile number & email" />
+                        <input type="text" className="form-control" placeholder="Mobile number & email" />
                     </div>
                     <div className="form-group">
-                        <input type="password" className="form-control" id="pwd" placeholder="Password" />
+                        <input type="password" className="form-control" placeholder="Password" />
                     </div>
                     <p className="label">Birthday</p>
                     <div className="form-group row">
@@ -95,7 +98,7 @@ const Register = () => {
                             <p className="terms">By clicking Sign Up, you agree to our Terms, Data Policy and Cookies Policy. You may receive SMS Notifications from us and can opt out any time</p>
                         </div>
                     </div>
-                    <button onClick={() => history.push("/home")}>Sign Up</button>
+                    <button onClick={(e) => createUser(e)}>Sign Up</button>
                     <p className="message">Already have an account? <Link to="/">login</Link>
                     </p>
                 </form>

@@ -1,12 +1,10 @@
-import React, { useContext } from 'react'
-import { UserContext } from '../../context/UserContext';
+import React from 'react'
 import Header from '../Header/Header';
 import {
     Card, CardImg, CardText, CardBody,
     CardTitle, CardSubtitle, Button
 } from 'reactstrap';
 const Home = () => {
-    const msg = useContext(UserContext)
     const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
     return (
         <>
