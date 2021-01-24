@@ -25,3 +25,37 @@
   color:#fff;
   text-align: left;
 }
+form.navbar-form button {
+  float: left;
+  width: 20%;
+  background: #fff;
+  color:#495057;
+  border-left: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 0px 3px 3px 0px;
+
+}
+form.navbar-form .form-control {
+  font-size: 14px;
+  border-radius: 3px 0px 0px 3px;
+}
+form.navbar-form .form-control:focus {
+  outline: none;
+}
+form.navbar-form{
+display: flex;
+}
+.navbar-right{
+  float: right;
+}
+/* 
+form.example button:hover {
+  background: #0b7dda;
+}
+
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+} */
